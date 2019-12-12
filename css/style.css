@@ -1,0 +1,332 @@
+body {
+  font-family: GothamPro-Medium, sans-serif;
+}
+
+header {
+  padding: 20px 0;
+}
+
+.header_wrap {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.phone {
+  margin-left: 30px;
+}
+
+.phone__link {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  font-size: 12px;
+}
+
+.phone__link::before {
+  position: absolute;
+  left: -30px;
+  content: url(../imgs/phone_orange.png);
+  width: 30px;
+  height: 17px;
+}
+
+.address {
+  margin-right: 30px;
+}
+
+.address__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.address__item {
+  position: relative;
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+.address__item::after {
+  position: absolute;
+  top: -30%;
+  right: -30px;
+  content: url(../imgs/geo_orange.png);
+  width: 30px;
+  height: 18px;
+}
+
+.title {
+  margin: 0;
+  height: 1px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+main {
+/*  padding-top: 150px;*/
+/*  background-image: url(../imgs/main.jpg);*/
+  -ms-background-position-x: 50%;
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.sale {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 50%;
+  text-align: center;
+  font-family: GothamPro-Bold, sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.sale_inner {
+  color: #000;
+  background-color: #ffc600;
+}
+
+.slider_wrap {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  /*  background-image: url(../imgs/slider_back.png);*/
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-color: lightgrey;
+}
+
+.slider {
+  width: 55%;
+  margin: 0 auto;
+  height: auto;
+}
+
+
+.owl-carousel {
+  margin-left: 45%;
+  width: 55%;
+  display: inline-block;
+}
+
+.owl-carousel {
+  position: relative;
+}
+
+.owl-carousel .owl-stage-outer {
+/*  background-color: aquamarine;*/
+  height: auto;
+}
+
+.owl-carousel .owl-nav {
+  display: none;
+}
+
+.owl-carousel .owl-dots {
+  position: absolute;
+  left: -100%;
+  top: 0;
+  display: block;
+  width: 100%;
+}
+
+.owl-carousel .owl-dots button {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 20px;
+  margin: 0px 0;
+  color: #fff;
+}
+
+.owl-carousel .owl-dots button::before {
+  position: absolute;
+  top: 0px;
+  right: 40px;
+  font-size: 14px;
+}
+
+.owl-carousel .owl-dots button::after {
+  position: absolute;
+  content: '►';
+  top: 0px;
+  right: 10px;
+  color: #ffc600;
+}
+
+.owl-carousel .owl-dots button:nth-child(1)::before {
+  content: 'Мягкая мебель';
+}
+
+.owl-carousel .owl-dots button:nth-child(2)::before {
+  content: 'Спальни';
+}
+
+.owl-carousel .owl-dots button:nth-child(3)::before {
+  content: 'Гостиные';
+}
+
+.owl-carousel .owl-dots button:nth-child(4)::before {
+  content: 'Интерьерные кровати и матрасы';
+}
+
+.owl-carousel .owl-dots button:nth-child(5)::before {
+  content: 'Кухни';
+}
+
+.owl-carousel .owl-dots button:nth-child(6)::before {
+  content: 'Кухонные диваны';
+}
+
+.owl-carousel .owl-dots button:nth-child(7)::before {
+  content: 'Столы и стулья';
+}
+
+.owl-carousel .owl-dots button:nth-child(8)::before {
+  content: 'Предметы интерьера';
+}
+
+
+
+.advantages {
+  padding-bottom: 60px;
+}
+
+.advantages_wrap {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages__item {
+  width: 15%;
+  text-align: center;
+}
+
+.advantages__item span {
+  font-size: 16px;
+}
+
+.advantages__img_wrap {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  background-color: #f04c28;
+  background-image: url(../imgs/choice.png);
+  background-repeat: no-repeat;
+  -ms-background-position-x: 50%;
+  background-position-x: 50%;
+  -ms-background-position-y: 40%;
+  background-position-y: 40%;
+}
+
+.advantages__img_wrap_2 {
+  background-image: url(../imgs/time.png);
+  -ms-background-position-x: 55%;
+  background-position-x: 55%;
+  -ms-background-position-y: 30%;
+  background-position-y: 30%;
+}
+
+.advantages__img_wrap_3 {
+  background-image: url(../imgs/services.png);
+  -ms-background-position-x: 45%;
+  background-position-x: 45%;
+  -ms-background-position-y: 50%;
+  background-position-y: 50%;
+}
+
+
+.advantages__img_wrap_4 {
+  background-image: url(../imgs/dealers.png);
+}
+
+.advantages__img_wrap_5 {
+  background-image: url(../imgs/quality.png);
+  -ms-background-position-x: 50%;
+  background-position-x: 50%;
+  -ms-background-position-y: 50%;
+  background-position-y: 50%;
+}
+
+.subtitle {
+  width: 65%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 10px 0px;
+  text-align: center;
+  background-color: #ffc600;
+  font-size: 24px;
+}
+
+footer .wrapper {
+  position: relative;
+  padding-bottom: 80px;
+  background-image: url(../imgs/lights.png);
+  background-repeat: no-repeat;
+  -ms-background-position-y: 100%;
+  background-position-y: 100%;
+}
+
+.order_btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 100px;
+  background-color: #ffc600;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+  border: none;
+  font-size: 24px;
+}
+
+.order_btn:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.footer_wrap {
+  font-size: 13px;
+}
+
+.footer_wrap .phone {
+  position: relative;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.footer_wrap .phone__link::before {
+  content: '';
+  width: 0;
+  height: 0;
+}
+
+.footer_wrap .phone__link::after {
+  position: absolute;
+  top: -30%;
+  right: -30px;
+  content: url(../imgs/phone_green.png);
+  width: 30px;
+  height: 17px;
+}
+
+.footer_wrap .address__item::after {
+  content: url(../imgs/geo_green.png);
+} 

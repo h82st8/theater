@@ -1,0 +1,230 @@
+@media (min-width: 320px) and (max-width: 768px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+
+  .header_wrap {
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .phone {
+    order: 2;
+    display: inline-block;
+    margin-left: 30px;
+  }
+
+  .phone__link {
+    padding: 20px 0;
+  }
+
+  .phone__link::before {
+    position: absolute;
+    left: -25px;
+    content: url(../imgs/phone_orange.png);
+    width: 17px;
+    height: 17px;
+  }
+
+  .logo {
+    order: 1;
+    display: inline-block;
+    width: 45%;
+  }
+
+  .logo img {
+    width: 80%;
+  }
+
+  .header_wrap .address {
+    display: none;
+  }
+
+  main {
+    padding-top: 0px;
+  }
+
+  .sale {
+    margin-bottom: 20px;
+    width: 90%;
+    font-size: 30px;
+  }
+
+  .slider {
+    width: 100%;
+    height: auto;
+  }
+
+  .owl-carousel {
+    margin-left: 0;
+    width: 100%;
+
+  }
+
+  .owl-carousel .owl-dots {
+    position: relative;
+    left: 0;
+    margin-top: 0px;
+  }
+
+  .owl-carousel .owl-dots button {
+    height: 35px;
+  }
+
+  .owl-carousel .owl-dots button::before {
+    right: unset;
+    left: 0;
+    top: 8px;
+  }
+
+  .owl-carousel .owl-dots button::after {
+    display: none;
+  }
+
+  .subtitle {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .advantages {
+    padding-bottom: 40px;
+  }
+
+  .advantages_wrap {
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    margin-bottom: 20px;
+    width: 49%;
+  }
+
+  .advantages__item span {
+    font-size: 13px;
+  }
+
+  .order_btn {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 10px 40px;
+    background-color: #ffc600;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    border: none;
+    font-size: 24px;
+  }
+
+  .footer_wrap .phone {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .footer_wrap .phone__link::before {
+    position: absolute;
+    top: 35%;
+    left: -25px;
+    content: url(../imgs/phone_green.png);
+    width: 17px;
+    height: 17px;
+  }
+
+  .footer_wrap .phone__link::after {
+    display: none;
+  }
+
+  .footer_wrap .address {
+    margin-right: 0;
+  }
+
+  .footer_wrap .address__list{
+    text-align: left;
+  }
+
+  .footer_wrap .address__item {
+    margin: 15px 0 15px 30px;
+  }
+
+  .footer_wrap .address__item::before {
+    position: absolute;
+    top: 0%;
+    left: -30px;
+    content: url(../imgs/geo_orange.png);
+    width: 30px;
+    height: 18px;
+  }
+
+  .footer_wrap .address__item::after {
+    display: none;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+  .wrapper {
+    padding: 0 40px;
+  }
+
+  .logo img {
+    width: 50%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1099px){
+  .wrapper {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+@media (min-width: 1100px) {
+  .wrapper {
+    margin: 0 auto;
+    width: 1024px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+  .advantages__item {
+    width: 17%;
+  }
+
+  .owl-carousel .owl-dots button::before {
+    font-size: 12px;
+  }
+
+  .advantages__item span {
+    font-size: 14px;
+  }
+
+  .order_btn {
+    padding: 10px 30px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 924px){
+  .sale {
+    font-size: 40px;
+  }
+
+  .owl-carousel .owl-dots button::before {
+    font-size: 9px;
+  }
+
+  .subtitle {
+    width: 70%;
+  }
+
+  .order_btn {
+    top: -15%;
+  }
+}
