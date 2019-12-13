@@ -85,7 +85,7 @@ form {
 
   position: absolute;
   z-index:2;
-  top: -150%;
+  top: -200%;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -112,6 +112,7 @@ form {
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
+  background-color: #ffc600;
 }
 
 .form_active {
@@ -124,6 +125,22 @@ form {
 .input_btn {
   padding: 5px;
   border-radius: 5px;
+}
+
+.form_close {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background-color: #ffc600;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 50%;
 }
 
 main {
@@ -203,6 +220,12 @@ main {
   height: 25px;
   margin: 0px 0;
   color: #fff;
+}
+
+button, 
+button:active, 
+button:focus {
+  outline: none;
 }
 
 .owl-carousel .owl-dots button::before {
@@ -332,11 +355,7 @@ main {
 
 footer .wrapper {
   position: relative;
-  padding-bottom: 80px;
-  background-image: url(../imgs/lights.png);
-  background-repeat: no-repeat;
-  -ms-background-position-y: 100%;
-  background-position-y: 100%;
+  padding-bottom: 40px;
 }
 
 .order_btn {
@@ -385,4 +404,10 @@ footer .wrapper {
 
 .footer_wrap .address__item::after {
   content: url(../imgs/geo_green.png);
-} 
+}
+
+.lights {
+  margin-bottom: 40px;
+  height: 30px;
+  background-image: url(../imgs/lights.gif);
+}

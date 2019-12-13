@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
 </head>
-<body id="body">
+<body>
 
   <header>
     <div class="wrapper">
@@ -92,16 +92,20 @@
   </main>
 
   <footer>
+
     <div class="wrapper">
       <div class="btn_wrap">
         <button class="order_btn" id="btn">Заказать</button>
+
         <form action="mail.php" method="POST" id="form" class="form">
+          <button id="close" class="form_close">X</button>
           <input class="input_txt" name="name" placeholder="Ваше имя"type="text">
           <input class="input_txt" name="phone" placeholder="Ваш номер телефона"type="text" required>
           <input class="input_txt" name="comments" placeholder="Ваш комментарий"type="text">
           <input class="input_btn" type="submit" value="Заказать">
         </form>
       </div>
+
       <div class="footer_wrap">
         <div class="phone">
           <a href="tel:89252569877" class="phone__link">8&nbsp;926&nbsp;709&nbsp;46&nbsp;58</a>
@@ -117,10 +121,14 @@
         </div>
       </div>
     </div>
+
+    <div class="lights"></div>
+
   </footer>
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
+  <!--   <script src="js/lights.js"></script> -->
   <script src="js/script.js"></script>
 </body>
 </html>

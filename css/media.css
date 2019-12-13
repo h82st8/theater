@@ -73,11 +73,15 @@
   .owl-carousel {
     margin-left: 0;
     width: 100%;
+  }
 
+  .owl-carousel .owl-stage-outer {
+    border: 7px solid #5a4141;
   }
 
   .owl-carousel .owl-dots {
     position: relative;
+    top: 10px;
     left: 0;
     margin-top: 0px;
   }
