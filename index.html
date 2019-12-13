@@ -42,6 +42,13 @@
 
     <h1 class="title">Компания "Театр мебели" - только качественная мебель</h1>
 
+    <form action="mail.php" method="POST" id="form">
+      <input class="input_txt" name="name" placeholder="Ваше имя"type="text">
+      <input class="input_txt" name="phone" placeholder="Ваш номер телефона"type="text" required>
+      <input class="input_txt" name="comments" placeholder="Ваш комментарий"type="text">
+      <input class="input_btn" type="submit" value="Заказать">
+    </form>
+
     <section class="slider_wrap">
       <span class="sale">
         Скидки до <span class="sale_inner">50%</span>
@@ -93,7 +100,7 @@
 
   <footer>
     <div class="wrapper">
-      <button class="order_btn">Заказать</button>
+      <button class="order_btn" id="btn">Заказать</button>
       <div class="footer_wrap">
         <div class="phone">
           <a href="tel:89252569877" class="phone__link">8&nbsp;926&nbsp;709&nbsp;46&nbsp;58</a>

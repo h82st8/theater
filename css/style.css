@@ -69,6 +69,55 @@ header {
   visibility: hidden;
 }
 
+form {
+  height: 1px;
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  z-index:2;
+  top: 20%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+  width: 30vw;
+  background-color: lightgrey;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.input_txt {
+  margin-top: 20px;
+}
+
+.input_btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.form_active {
+  height: auto;
+  visibility: visible;
+  opacity: 1;
+}
+
+.input_txt,
+.input_btn {
+  padding: 5px;
+  border-radius: 5px;
+}
+
 main {
 /*  padding-top: 150px;*/
 /*  background-image: url(../imgs/main.jpg);*/
