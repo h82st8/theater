@@ -2,7 +2,7 @@ $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
     autoplay : true,
-    autoplayTimeout : 2000,
+    autoplayTimeout : 4000,
     smartSpeed: 700,
     nav:true,
     responsive:{
@@ -24,4 +24,3 @@ function func(event) {
     console.log(event);
     form.classList.toggle("form_active");
 }
-

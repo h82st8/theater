@@ -46,15 +46,23 @@
 
   main {
     padding-top: 0px;
+    background-image: url(../imgs/slider_back.png);
+    -webkit-background-size: 150%;
+    background-size: 150%;
   }
 
   form {
+    top: -100%;
     width: 90vw;
   }
   .sale {
     margin-bottom: 20px;
     width: 90%;
     font-size: 30px;
+  }
+
+  .slider_wrap {
+    padding-top: 110px;
   }
 
   .slider {
@@ -76,12 +84,14 @@
 
   .owl-carousel .owl-dots button {
     height: 35px;
+    border-bottom: 1px solid #000;
   }
 
   .owl-carousel .owl-dots button::before {
     right: unset;
     left: 0;
     top: 8px;
+    color: #000;
   }
 
   .owl-carousel .owl-dots button::after {
@@ -103,7 +113,7 @@
     -ms-flex-wrap: wrap;
     -o-flex-wrap: wrap;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .advantages__item {
@@ -179,6 +189,16 @@
   .logo img {
     width: 50%;
   }
+
+  .slider_wrap {
+    padding-top: 200px;
+    padding-bottom: 70px;
+  }
+
+  .owl-carousel .owl-dots {
+    top: 50px;
+    left: 20px;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1099px){
@@ -196,8 +216,16 @@
 }
 
 @media (min-width: 769px) and (max-width: 1024px){
+  .slider_wrap {
+    padding-top: 100px;
+  }
+
   .advantages__item {
     width: 17%;
+  }
+
+  .owl-carousel .owl-dots button {
+    height: 20px;
   }
 
   .owl-carousel .owl-dots button::before {
@@ -216,11 +244,12 @@
 
 @media (min-width: 769px) and (max-width: 924px){
   .sale {
+    margin-bottom: 60px;
     font-size: 40px;
   }
 
   .owl-carousel .owl-dots button::before {
-    font-size: 9px;
+    font-size: 12px;
   }
 
   .subtitle {
@@ -230,4 +259,12 @@
   .order_btn {
     top: -15%;
   }
+}
+
+@media (min-width: 1441px) {
+  main {
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+
 }

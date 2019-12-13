@@ -1,5 +1,3 @@
-<?php ob_start(); ?>
-<p style="text-align:center; font-size:24px; padding: 300px 0 0 0;">
 <?php
 
 	require 'libs/phpmailer/PHPMailerAutoload.php';
@@ -35,12 +33,7 @@ $mail->Body    = 'Пользователь:  ' . $name . '  ' . $phone . '  ' . 
 $mail->AltBody = '';
 
 if($mail->send()) {
-	echo "<p>Сообщение не отправлено";
-	header("refresh:3;url=http://www.candb.com.ua/index5.html");
-	exit ("Ошибка");
-} else {
-	echo "<p>Ваше сообщение отправлено. Спасибо.";
-	header("refresh:3;location: index.html");
-}
+	header("location: index.html");
 
+}
 ?>
